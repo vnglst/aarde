@@ -16,12 +16,15 @@
   </head>
   <style>
     html {
-      height: 100%;
+      min-height: 100%;
       font-family: sans-serif;
       font-size: 12px;
     }
 
-    h1,
+    h1 {
+      margin: 20px 0 0 0;
+    }
+
     p {
       margin: 0;
     }
@@ -68,6 +71,18 @@
       min-width: 4ch;
       text-align: center;
     }
+
+    #made {
+      text-align: center;
+      line-height: 1.5;
+      font-family: monospace;
+      margin: 20px 0;
+      font-size: 10px;
+    }
+
+    #made a {
+      color: rgba(0, 255, 0);
+    }
   </style>
   <body>
     <h1>Aarde - Simulating Evolution</h1>
@@ -86,6 +101,11 @@
       <span id="speed">1</span>
       <button id="faster">+</button>
     </fieldset>
+    <p id="made">
+      made by
+      <a href="https://koenvangilst.nl/">Koen van Gilst</a> | source on
+      <a href="https://github.com/vnglst/aarde">github</a>
+    </p>
   </body>
   <script type="module" src="./aarde.js"></script>
 </html>
